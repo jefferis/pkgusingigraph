@@ -26,4 +26,3 @@ library(igraph)
 nn=set_igraph_option()
 }
 }
-
