@@ -14,4 +14,16 @@ set_igraph_option(g = igraph::make_ring(10), set.vs.es = TRUE)
 \description{
 Try to set igraph vs.es option when computing neighborhood
 }
+\examples{
+# OK
+nn=set_igraph_option(set.vs.es=FALSE)
+\donttest{
+# errors out
+nn=set_igraph_option()
+
+# OK again if igraph is attached
+library(igraph)
+nn=set_igraph_option()
+}
+}
 
